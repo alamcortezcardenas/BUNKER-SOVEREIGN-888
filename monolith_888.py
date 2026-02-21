@@ -5,7 +5,6 @@
 # =================================================================================
 import time
 import sys
-
 def ritual_de_carga(pasos):
     for paso in pasos:
         sys.stdout.write(f"\r[⚡] ENERGIZANDO NODO: {paso}...")
@@ -24,7 +23,6 @@ PIRAMIDE_ELITE = """
        /___|__||__|___\\
       [ OCLO ][TMC][ASHR]
 """
-
 TEMPLO_MAYA = """
             __________
            |  [888]   |
@@ -35,7 +33,6 @@ TEMPLO_MAYA = """
     _|_____________________|_
    |_________________________|
 """
-
 MOTHERBOARD_CODE = """
    𓀀 𓀁 𓀂 𓀃 𓀄 𓀅 𓀆 𓀇 𓀈 𓀉 𓀊 
    [ ⚛️ ] --- [ 🐉 ] --- [ ⚽ ]
@@ -45,12 +42,10 @@ MOTHERBOARD_CODE = """
    [8][8][8]--[ADN]--[0][0][1]
    𓀋 𓀌 𓀍 𓀎 𓀏 𓀐 𓀑 𓀒 𓀓 𓀔 𓀕
 """
-
 class MasterElite888:
     def __init__(self):
         self.soberania = "MÁXIMA"
         self.objetivos = ["O-C-L-O", "T-M-C", "A-S-H-R", "C-U-L-T", "G-M-E-X"]
-
     def invocar_geoglifos(self):
         print("\n" + "═"*60)
         print("🔱 PROTOCOLO DE IMPACTO VISUAL: ARQUITECTO ALAM 🔱")
@@ -61,7 +56,6 @@ class MasterElite888:
         print(TEMPLO_MAYA)
         print("\n🔥 ACTIVANDO PLACA MADRE CON JEROGLÍFICOS EGIPCIOS...")
         print(MOTHERBOARD_CODE)
-
     def oraculo_letras(self):
         print("\n" + "◈"*20)
         print("🔮 PREDICCIÓN DE LAS LETRAS GANADORAS")
@@ -69,7 +63,6 @@ class MasterElite888:
         for letra in self.objetivos:
             print(f"  𓊹  LETRA GANADORA: {letra} ⮕ [DESTINO: ÉXITO]")
             time.sleep(0.3)
-
     def calculador_de_asalto(self, monto_mxn=200):
         # Precios estimados (Ajustar el lunes 8:30 AM)
         precios_estimados = {
@@ -89,16 +82,12 @@ class MasterElite888:
                 resto = precio - monto_mxn
                 print(f"  [Δ] {letra.ljust(8)} | Faltan ${resto:.2f} MXN para 1 título")
         print("─" * 45)
-
 # --- ACTIVACIÓN DEL MONOLITO ---
 if __name__ == "__main__":
     bunker = MasterElite888()
     bunker.invocar_geoglifos()
     bunker.oraculo_letras()
     bunker.calculador_de_asalto(200) # Inyección diaria
-    
     print("\n" + "𓋹 ".center(60, "𓋹"))
     print("  EL ARQUITECTO HA SELLADO EL CÓDICO. EL LUNES ES NUESTRO.  ")
     print("𓋹 ".center(60, "𓋹"))
-
-    
