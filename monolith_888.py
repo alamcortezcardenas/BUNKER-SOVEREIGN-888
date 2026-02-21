@@ -100,3 +100,5 @@ if __name__ == "__main__":
     print("\n" + "𓋹 ".center(60, "𓋹"))
     print("  EL ARQUITECTO HA SELLADO EL CÓDICO. EL LUNES ES NUESTRO.  ")
     print("𓋹 ".center(60, "𓋹"))
+
+    
