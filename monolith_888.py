@@ -91,6 +91,10 @@ if __name__ == "__main__":
     bunker = MasterElite888()
     bunker.invocar_geoglifos()
     bunker.oraculo_letras()
+    
+    # NUEVA LLAMADA AL MOTOR LOGÍSTICO
+    bunker.calculador_de_asalto(200) # Tu goteo diario
+    
     print("\n" + "𓋹 ".center(60, "𓋹"))
     print("  EL ARQUITECTO HA SELLADO EL CÓDIGO. EL LUNES ES NUESTRO.  ")
     print("𓋹 ".center(60, "𓋹"))
