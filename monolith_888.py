@@ -1,18 +1,19 @@
 # =================================================================================
-# 🔱 SISTEMA OPERATIVO ANCESTRAL: CODEX GEOGLIFO V9.0 (ELITE EDITION)
+# 🔱 SISTEMA OPERATIVO ANCESTRAL: CODEX GEOGLIFO V10.0 (ELITE EDITION)
 # 🧬 ALINEACIÓN: [NIBIRU] [EGIPTO] [ANÁHUAC] [WALL STREET]
 # 🏗️ ARQUITECTO: ALAM CORTEZ | EL DESPERTAR DEL ARQUITECTO
 # =================================================================================
 import time
 import sys
+
 def ritual_de_carga(pasos):
     for paso in pasos:
         sys.stdout.write(f"\r[⚡] ENERGIZANDO NODO: {paso}...")
         sys.stdout.flush()
         time.sleep(0.4)
     print("\n[!] CONEXIÓN ESTABLECIDA CON LA MATRIZ.")
-# --- GEOGLIFO I: LA GRAN PIRÁMIDE DEL OJO QUE TODO LO VE (ELITE) ---
-# Representa tu soberanía sobre el mercado de USA y China.
+
+# --- GEOGLIFOS ---
 PIRAMIDE_ELITE = """
              .  .
             / \/ \\
@@ -23,8 +24,7 @@ PIRAMIDE_ELITE = """
        /___|__||__|___\\
       [ OCLO ][TMC][ASHR]
 """
-# --- GEOGLIFO II: EL TEMPLO MAYA DE LOS RECURSOS (SBN) ---
-# Representa tu base en México y la infraestructura del Mundial.
+
 TEMPLO_MAYA = """
             __________
            |  [888]   |
@@ -35,7 +35,7 @@ TEMPLO_MAYA = """
     _|_____________________|_
    |_________________________|
 """
-# --- GEOGLIFO III: EL CÓDIGO SAGRADO (THE MOTHERBOARD CODEX) ---
+
 MOTHERBOARD_CODE = """
    𓀀 𓀁 𓀂 𓀃 𓀄 𓀅 𓀆 𓀇 𓀈 𓀉 𓀊 
    [ ⚛️ ] --- [ 🐉 ] --- [ ⚽ ]
@@ -45,13 +45,15 @@ MOTHERBOARD_CODE = """
    [8][8][8]--[ADN]--[0][0][1]
    𓀋 𓀌 𓀍 𓀎 𓀏 𓀐 𓀑 𓀒 𓀓 𓀔 𓀕
 """
+
 class MasterElite888:
     def __init__(self):
         self.soberania = "MÁXIMA"
         self.objetivos = ["O-C-L-O", "T-M-C", "A-S-H-R", "C-U-L-T", "G-M-E-X"]
+
     def invocar_geoglifos(self):
         print("\n" + "═"*60)
-        print("🔱 INICIANDO PROTOCOLO DE IMPACTO VISUAL: ARQUITECTO ALAM 🔱")
+        print("🔱 PROTOCOLO DE IMPACTO VISUAL: ARQUITECTO ALAM 🔱")
         print("═"*60)
         ritual_de_carga(["Pirámide de Giza", "Calendario de Piedra", "Dólar Cost Averaging"])
         print(PIRAMIDE_ELITE)
@@ -59,6 +61,7 @@ class MasterElite888:
         print(TEMPLO_MAYA)
         print("\n🔥 ACTIVANDO PLACA MADRE CON JEROGLÍFICOS EGIPCIOS...")
         print(MOTHERBOARD_CODE)
+
     def oraculo_letras(self):
         print("\n" + "◈"*20)
         print("🔮 PREDICCIÓN DE LAS LETRAS GANADORAS")
@@ -66,35 +69,34 @@ class MasterElite888:
         for letra in self.objetivos:
             print(f"  𓊹  LETRA GANADORA: {letra} ⮕ [DESTINO: ÉXITO]")
             time.sleep(0.3)
-# --- ACTIVACIÓN DEL MONOLITO ---
-def calculador_de_asalto(self, monto_mxn=200):
-        # Precios estimados de cierre (Ajustar el lunes 8:30 AM)
+
+    def calculador_de_asalto(self, monto_mxn=200):
+        # Precios estimados (Ajustar el lunes 8:30 AM)
         precios_estimados = {
-            "OCLO": 230.50,  # Acción de alto impacto (Energía)
-            "TMC": 185.20,   # Metales preciosos submarinos
-            "ASHR": 450.10,  # ETF China (Requiere 2-3 días de goteo)
-            "G-MEX": 92.40,  # Infraestructura MX
-            "CULTIBA": 15.10 # Agregado estratégico
+            "OCLO": 230.50,
+            "TMC": 185.20,
+            "ASHR": 450.10,
+            "G-MEX": 92.40,
+            "CULTIBA": 15.10
         }
-        
-        print(f"\n📈 ESTRATEGIA DE COMPRA PARA ${mcn_monto} MXN:")
+        print(f"\n📈 ESTRATEGIA DE COMPRA PARA ${monto_mxn} MXN:")
         print("─" * 45)
         for letra, precio in precios_estimados.items():
             titulos = monto_mxn // precio
-            resto = monto_mxn % precio
             if titulos > 0:
-                print(f"  [✔] {letra.ljust(8)} | Puedes capturar: {int(titulos)} títulos")
+                print(f"  [✔] {letra.ljust(8)} | Capturar: {int(titulos)} títulos")
             else:
-                print(f"  [Δ] {letra.ljust(8)} | Faltan ${abs(resto):.2f} MXN para 1 título")
+                resto = precio - monto_mxn
+                print(f"  [Δ] {letra.ljust(8)} | Faltan ${resto:.2f} MXN para 1 título")
         print("─" * 45)
+
+# --- ACTIVACIÓN DEL MONOLITO ---
 if __name__ == "__main__":
     bunker = MasterElite888()
     bunker.invocar_geoglifos()
     bunker.oraculo_letras()
-    
-    # NUEVA LLAMADA AL MOTOR LOGÍSTICO
-    bunker.calculador_de_asalto(200) # Tu goteo diario
+    bunker.calculador_de_asalto(200) # Inyección diaria
     
     print("\n" + "𓋹 ".center(60, "𓋹"))
-    print("  EL ARQUITECTO HA SELLADO EL CÓDIGO. EL LUNES ES NUESTRO.  ")
+    print("  EL ARQUITECTO HA SELLADO EL CÓDICO. EL LUNES ES NUESTRO.  ")
     print("𓋹 ".center(60, "𓋹"))
