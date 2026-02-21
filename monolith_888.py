@@ -67,6 +67,26 @@ class MasterElite888:
             print(f"  𓊹  LETRA GANADORA: {letra} ⮕ [DESTINO: ÉXITO]")
             time.sleep(0.3)
 # --- ACTIVACIÓN DEL MONOLITO ---
+def calculador_de_asalto(self, monto_mxn=200):
+        # Precios estimados de cierre (Ajustar el lunes 8:30 AM)
+        precios_estimados = {
+            "OCLO": 230.50,  # Acción de alto impacto (Energía)
+            "TMC": 185.20,   # Metales preciosos submarinos
+            "ASHR": 450.10,  # ETF China (Requiere 2-3 días de goteo)
+            "G-MEX": 92.40,  # Infraestructura MX
+            "CULTIBA": 15.10 # Agregado estratégico
+        }
+        
+        print(f"\n📈 ESTRATEGIA DE COMPRA PARA ${mcn_monto} MXN:")
+        print("─" * 45)
+        for letra, precio in precios_estimados.items():
+            titulos = monto_mxn // precio
+            resto = monto_mxn % precio
+            if titulos > 0:
+                print(f"  [✔] {letra.ljust(8)} | Puedes capturar: {int(titulos)} títulos")
+            else:
+                print(f"  [Δ] {letra.ljust(8)} | Faltan ${abs(resto):.2f} MXN para 1 título")
+        print("─" * 45)
 if __name__ == "__main__":
     bunker = MasterElite888()
     bunker.invocar_geoglifos()
