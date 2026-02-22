@@ -1,0 +1,25 @@
+import os
+import ccxt
+import pandas as pd
+from dotenv import load_dotenv
+
+# Letra de Acción: Cargar la Bóveda .env que protegimos
+load_dotenv()
+
+def búnker_888_scanner():
+    # Conexión Soberana
+    exchange = ccxt.binance()
+    print("--- INICIANDO ESCANEO DE REJILLA 888 ---")
+    
+    # Obtener mercados
+    mercados = exchange.load_markets()
+    
+    # Filtrar Activos por Frecuencia de Riqueza
+    # Buscamos activos cuyo volumen termine en 8 o 88
+    activos_ganadores = [s for s in mercados if 'USDT' in s]
+    
+    print(f"Búnker Operativo: Monitoreando {len(activos_ganadores)} vectores.")
+    return activos_ganadores
+
+# Ejecutar el eje vertical del sistema
+búnker_888_scanner()
