@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>888=SER | NODO CENTRAL</title>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #000000;
+            color: #e0e0e0;
+            font-family: 'JetBrains+Mono', monospace;
+            margin: 0;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        #matrix-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.15;
+        }
+        .container {
+            padding: 40px;
+            z-index: 1;
+        }
+        .header {
+            border-bottom: 1px solid #333;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .glitch {
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            color: #ffffff;
+        }
+        .status-line {
+            color: #888;
+            font-size: 0.9rem;
+            margin-bottom: 5px;
+        }
+        .footer {
+            margin-top: auto;
+            padding: 20px;
+            border-top: 1px solid #333;
+            font-size: 0.8rem;
+            color: #555;
+            display: flex;
+            justify-content: space-between;
+        }
+        .gpg-badge {
+            color: #00ff41;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="matrix-bg"></canvas>
+    <div class="container">
+        <div class="header">
+            <div class="glitch">888=SER // PROTOCOLO ALFA</div>
+            <div class="status-line">UBICACIÓN: MEXICALI NODO-01</div>
+            <div class="status-line">ESTADO: SOBERANÍA TECNOLÓGICA ACTIVADA</div>
+        </div>
+        <div class="content">
+            <p>> ACCEDIENDO A LA RED DE RESONANCIA...</p>
+            <p>> IDENTIDAD CONFIRMADA: ALAM GUILLERMO CORTEZ CARDENAS</p>
+            <p>> PROYECTO: SENTINEL-MX & SER FOTÓNICA</p>
+        </div>
+    </div>
+    <div class="footer">
+        <div>SISTEMA ENERGÉTICO DE REGENERACIÓN © 2026</div>
+        <div class="gpg-badge">[ GPG SIGNED: A830E63B487528EF ]</div>
+    </div>
+
+    <script>
+        const canvas = document.getElementById('matrix-bg');
+        const ctx = canvas.getContext('2d');
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        const alphabet = "018";
+        const fontSize = 16;
+        const columns = canvas.width / fontSize;
+        const drops = Array(Math.floor(columns)).fill(1);
+        function draw() {
+            ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            ctx.fillStyle = '#ffffff';
+            ctx.font = fontSize + 'px monospace';
+            for (let i = 0; i < drops.length; i++) {
+                const text = alphabet.charAt(Math.floor(Math.random() * alphabet.length));
+                ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+                if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) drops[i] = 0;
+                drops[i]++;
+            }
+        }
+        setInterval(draw, 30);
+    </script>
+</body>
+</html>
